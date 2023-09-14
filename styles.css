@@ -10,7 +10,7 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: minmax(250px, 280px) 1fr;
-    grid-template-rows: 200px 1fr;
+    grid-template-rows: 220px 1fr;
     color: white;
 }
 
@@ -21,9 +21,15 @@ body {
 }
 
 .header-container {
+    padding: 20px;
     grid-column: 2/3;
     grid-row: 1/2;
-    box-shadow: 0 3px 10px silver;
+    box-shadow: none;
+    background-color: #1e293b;
+}
+
+.main-content-container {
+    
 }
 
 a {
@@ -113,12 +119,94 @@ a {
     background: url('./icons/shield_FILL0_wght400_GRAD0_opsz24.svg') no-repeat center;
 }
 
-/*------*/
-.dummy-icon {
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border: 1px solid black;
-    margin-right: 15px;
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.header-container button {
+    border: none;
+    background-color:#1e293b;
+}
+
+.icon.search {
+    background: url('./icons/search_FILL0_wght400_GRAD0_opsz24.svg') no-repeat center;
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+input[type="search"] {
+    width: 50vw;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.profile-pic {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.bottom-header img {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    margin-right: 10px;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-header button {
+    background-color: #94a3b8;
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.name p:first-child {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.name p:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.user {
+    display: flex;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
