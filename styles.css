@@ -28,10 +28,6 @@ body {
     background-color: #1e293b;
 }
 
-.main-content-container {
-    
-}
-
 a {
     text-decoration: none;
 }
@@ -209,4 +205,65 @@ button:hover {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.main-content-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 320px;
+    grid-template-rows: 380px 380px;
+
+}
+
+.main-content-container > div > h2 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.your-projects {
+    padding-left: 20px;
+    grid-row: 1/3;
+}
+
+.projects {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 390px);
+    grid-template-rows: repeat(3, 220px);
+}
+
+.project {
+    padding: 15px;
+    color: white;
+    background-color: #1e293b;
+    border-radius: 8px;
+    border-left: 10px solid #94a3b8;
+    box-shadow: 3px 5px 5px silver;
+}
+
+.project p {
+    margin: none;
+}
+
+.project p:first-child {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.announcements {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.trending {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.trending,
+.announcements,
+.your-projects {
+    color: black;
+    border: 1px solid red
 }
