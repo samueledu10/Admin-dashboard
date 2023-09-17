@@ -140,7 +140,7 @@ form {
 }
 
 input[type="search"] {
-    width: 50vw;
+    width: 30vw;
     height: 30px;
     border-radius: 30px;
     border: none;
@@ -208,11 +208,15 @@ button:hover {
 }
 
 .main-content-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
     display: grid;
     gap: 15px;
-    grid-template-columns: 1fr 340px;
+    grid-template-columns: 900px 340px;
     grid-template-rows: 420px 370px;
-
 }
 
 .main-content-container > div > h2 {
@@ -228,7 +232,7 @@ button:hover {
 .projects {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(2, 390px);
+    grid-template-columns: repeat(auto-fit, 390px);
     grid-template-rows: repeat(3, 220px);
 }
 
