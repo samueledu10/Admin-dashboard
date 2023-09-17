@@ -210,8 +210,8 @@ button:hover {
 .main-content-container {
     display: grid;
     gap: 15px;
-    grid-template-columns: 1fr 320px;
-    grid-template-rows: 380px 380px;
+    grid-template-columns: 1fr 340px;
+    grid-template-rows: 420px 370px;
 
 }
 
@@ -256,14 +256,89 @@ button:hover {
     grid-row: 1/2;
 }
 
+.announcement {
+    color: white;
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.announcement-1,
+.announcement-2,
+.announcement-3 {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.announcement-1 p:first-child,
+.announcement-2 p:first-child,
+.announcement-3 p:first-child {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.announcement-1 p:nth-child(2),
+.announcement-2 p:nth-child(2),
+.announcement-3 p:nth-child(2){
+    margin-top: 1px;
+}
+
+hr {
+    width: 280px;
+    border-color: #94a3b8;
+}
+
 .trending {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
+.trends {
+    background-color: #1e293b;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 26px;
+}
+.trends img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.trend-1,
+.trend-2,
+.trend-3 {
+    display: flex;
+    gap: 10px;
+}
+
+.trend-1,
+.trend-2 {
+    margin-bottom: 20px;
+}
+
+.trend-1 > div > p:nth-child(2),
+.trend-2 > div > p:nth-child(2),
+.trend-3 > div > p:nth-child(2) {
+    color: #94a3b8;
+}
+
+.trends p {
+    margin: 5px;
+}
+
+
 .trending,
 .announcements,
 .your-projects {
     color: black;
-    border: 1px solid red
+}
+
+.trending,
+.announcements {
+    margin-right: 20px;
 }
